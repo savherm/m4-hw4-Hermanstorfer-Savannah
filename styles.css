@@ -5,11 +5,13 @@
   box-sizing: border-box;
 }
 
-/* Body with background */
+/* Body with your background pattern */
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
-  background: url("pattern.png"); /* Replace with your actual background image filename */
+  background: url("moroccan-flower.png"); /* keep your custom pattern file here */
+  background-size: cover;          /* makes the pattern fill */
+  background-attachment: fixed;    /* keeps pattern in place while scrolling */
 }
 
 /* HEADER: Flexbox #1 */
@@ -17,7 +19,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #333;
+  background: #4a148c; /* your custom header color (purple example) */
   color: #fff;
   padding: 1rem;
 }
@@ -48,6 +50,9 @@ header nav a {
 /* ABOUT SECTION */
 .about {
   flex: 3;
+  background: rgba(255, 255, 255, 0.85); /* light background so text is readable on pattern */
+  padding: 1rem;
+  border-radius: 8px;
 }
 
 .about h2 {
@@ -71,9 +76,10 @@ header nav a {
 /* SIDEBAR */
 .sidebar {
   flex: 1;
-  background: #f4f4f4;
+  background: rgba(255, 255, 255, 0.9); /* light box over pattern */
   padding: 1rem;
   border-left: 2px solid #ddd;
+  border-radius: 8px;
 }
 
 .sidebar h3 {
@@ -93,7 +99,7 @@ header nav a {
 
 /* FOOTER */
 footer {
-  background: #333;
+  background: #4a148c; /* matches header color */
   color: #fff;
   text-align: center;
   padding: 1rem;
