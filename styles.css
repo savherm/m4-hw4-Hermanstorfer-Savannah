@@ -1,0 +1,84 @@
+/* Reset some default margins */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+}
+
+/* Header section */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2c3e50;
+  color: white;
+  padding: 20px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+nav a {
+  color: #ecf0f1;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+/* Main layout container */
+.container {
+  display: flex;
+  background-image: url('moroccan-flower.png');
+  background-repeat: repeat;
+  padding: 20px;
+}
+
+/* About section with profile image */
+.about {
+  flex: 3;
+  background-color: #ecf0f1;  /* ✅ Solid background added */
+  padding: 20px;
+  border-right: 2px solid #ccc;
+  box-sizing: border-box;
+}
+
+.about-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.about-content img {
+  width: 150px;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Sidebar with social icons */
+.sidebar {
+  flex: 1;
+  background-color: #ecf0f1;
+  padding: 20px;
+  border-left: 2px solid #ccc;
+  box-sizing: border-box;
+}
+
+.sidebar h3 {
+  margin-top: 0;
+}
+
+.social-icons img {
+  width: 32px;
+  margin: 10px 5px 0 0;
+}
+
+/* Footer section */
+footer {
+  background-color: #2c3e50;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+}
