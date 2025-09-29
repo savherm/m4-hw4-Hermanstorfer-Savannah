@@ -95,3 +95,22 @@ header nav a {
 
 /* Social icons */
 .social-icons {
+  display: flex;          /* keeps icons in a row */
+  gap: 0.5rem;
+}
+
+.social-icons img {
+  width: 28px !important;     /* force shrink 512px → 28px */
+  height: 28px !important;
+  object-fit: contain;        /* keeps icons proportional */
+  display: inline-block;
+}
+
+/* FOOTER */
+footer {
+  background: #4a148c; /* solid purple matches header */
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
